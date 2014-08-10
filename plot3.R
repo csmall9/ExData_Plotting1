@@ -17,13 +17,13 @@
   
   ##  Plot the data and save the file
 
-  
+  png(filename = "plot3.png")
   with(newpowerfeb, plot(newdatetime, Sub_metering_1,type = "s", ylab= "Energy sub metering", xlab = " "))
   with (subset(newpowerfeb, points(newdatetime, Sub_metering_2, type = "s", col= "red")))
   with (subset(newpowerfeb, points(newdatetime, Sub_metering_3, type = "s", col= "blue")))
-  legend("topright", lty=c(1,1,1), cex=.9,  pt.cex = 1,col = c("black", "red", "blue"), legend = c("Sub_metering_1   ","Sub_metering_2   ","Sub_metering_3   "))
+  legend("topright", lty=c(1,1,1), cex=.9,  pt.cex = 1,col = c("black", "red", "blue"), legend = c("Sub_metering_1 ","Sub_metering_2 ","Sub_metering_3 "))
       
-  dev.copy(png, file = "plot3.png")  ## Copy  plot 3 to a PNG file
+  
   dev.off()   ## close the PNG device.
   
   

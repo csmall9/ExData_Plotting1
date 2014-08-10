@@ -18,7 +18,7 @@
   ##  Plot the data and save the file
 
   
-  png(filename = "plot4png.png")
+  png(filename = "plot4.png")
   attach(newpowerfeb)
   par(mfrow = c(2,2))
     
@@ -38,7 +38,7 @@
   plot(newdatetime, Global_reactive_power,type = "l",ylab="Global_reactive_power",xlab= "datetime")
   
   ## 
-  ##dev.copy(png, file = "plot4.png")  ## Copy  plot 4 to a PNG file
+  
   dev.off()   ## close the PNG device.
   
   

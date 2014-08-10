@@ -21,9 +21,11 @@
   
   ##  Plot the data and save the file
   
+  png(filename = "plot2.png")
+  
   with(newpowerfeb, plot(newdatetime, Global_active_power,type = "l",ylab="Global Active Power (kilowatts)",xlab= " " ))
   
-  dev.copy(png, file = "plot2.png")  ## Copy  plot 2 to a PNG file
+  
   dev.off()   ## close the PNG device.
   
   
